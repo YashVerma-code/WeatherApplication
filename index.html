@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Forecast Teller</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna:wght@100..400&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link rel="icon" href="sunny.gif"> -->
+  </head>
+  <body>
+    <div class="body-part"></div>
+    <nav class="navbar">
+      <div class="container-fluid flex">
+        <a class="navbar-brand">WeatherToday.Com</a>
+        <div class="inputText">
+          <input
+            type="search"
+            class="control"
+            id="search"
+            placeholder="search place"
+          />
+          <button class="btn">Search</button>
+        </div>
+      </div>
+    </nav>
+    <div class="weather-box">
+      <div class="weather">
+        <div class="weather-header">
+          <div class="weather-header-inside">
+            <div class="location-icon"></div>
+            <div class="location"><span>Keshavpuram</span></div>
+          </div>
+        </div>
+        <div class="date-time"><span>Fri, 28-06-2024</span></div>
+        <div class="weather-content">
+          <div class="weather-image"></div>
+          <div class="temperature"><span>22 &deg;C</span></div>
+        </div>
+        <div class="weather-details">
+          <div class="maxtemp same">
+            <div class="symbol">
+              <!-- <i class="fa-solid fa-temperature-high"></i> -->
+              <img src="maxtemp.png" alt="maxtemp" />
+            </div>
+            <div class="content">
+              <span>Maximum temp </span>
+              <span class="max-temp">26.45</span>
+            </div>
+          </div>
+          <div class="mintemp same">
+            <div class="symbol">
+              <img src="mintemp.png" alt="" />
+            </div>
+            <div class="content">
+              <span>Minimum temp</span>
+              <span class="min-temp">26.45</span>
+            </div>
+          </div>
+          <div class="windspeed same">
+            <div class="symbol">
+              <img src="wind.png" alt="wind" />
+            </div>
+            <div class="content">
+              <span>Wind speed </span>
+              <span class="wind-speed">26.45</span>
+            </div>
+          </div>
+          <div class="humidity same">
+            <div class="symbol">
+              <img src="humidity.png" alt="humidity" />
+            </div>
+            <div class="content">
+              <span>Humidity </span>
+              <span class="humidity-value">26.45%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="app.js" ></script>
+  </body>
+</html>
