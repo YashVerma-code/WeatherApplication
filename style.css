@@ -32,6 +32,20 @@
     justify-content: space-between;
     align-items: center;
 }
+.navbar-brand{
+    position: relative;
+    animation: logo 2s ease 0s infinite alternate;
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+}
+@keyframes logo {
+    from {
+        left: -600px;
+    }
+    to {
+        left: 0;
+    }
+    
+}
 .container-fluid a{
     width: 10em;
     padding-left: 25px;
@@ -122,6 +136,12 @@
     background-image: url("loaction.png");
     background-position: center;
     background-size: contain;
+    transition: 1s;
+}
+.location-icon:hover{
+     /* transform: translateX(300px); */
+    transform: rotate(360deg);
+    transform: translateX(300px);
 }
 .location{
     width: 270px;
@@ -198,6 +218,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 1s;
+    transition-timing-function: ease-in;
+}
+.symbol:hover{
+    transform: rotate(360deg);
 }
 .symbol img{
     height:42px;

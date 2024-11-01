@@ -33,17 +33,17 @@ async function fillWeatherdetail(url) {
     // dataArr.name.charAt(0).toUpperCase() + dataArr.name.slice(1).toLowerCase();
 
     if (dataArr.weather[0].main == "Clouds") {
-      weatherImage.style.backgroundImage=`url('/images/clouds.gif')`;
+      weatherImage.style.backgroundImage=`url('images/clouds.gif')`;
     } else if (dataArr.weather[0].main == "Rain") {
-      weatherImage.style.backgroundImage=`url('/images/rain.gif')`;
+      weatherImage.style.backgroundImage=`url('images/rain.gif')`;
     } else if (dataArr.weather[0].main == "Clear") {
-      weatherImage.style.backgroundImage=`url('/images/sunny.gif')`;
+      weatherImage.style.backgroundImage=`url('images/sunny.gif')`;
     } else if (dataArr.weather[0].main == "Mist") {
-      weatherImage.style.backgroundImage=`url('/images/mist.gif')`;
+      weatherImage.style.backgroundImage=`url('images/mist.gif')`;
     } else if (dataArr.weather[0].main == "Snow") {
-      weatherImage.style.backgroundImage=`url('/images/snow.gif')`;
+      weatherImage.style.backgroundImage=`url('images/snow.gif')`;
     } else if (dataArr.weather[0].main == "Drizzle") {
-      weatherImage.style.backgroundImage=`url('/images/sky-clouds.gif')`;
+      weatherImage.style.backgroundImage=`url('images/sky-clouds.gif')`;
     }else{
       console.log("else part executed");
     }
