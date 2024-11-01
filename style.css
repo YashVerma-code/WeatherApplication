@@ -35,7 +35,6 @@
 .navbar-brand{
     position: relative;
     animation: logo 2s ease 0s infinite alternate;
-    animation: name duration timing-function delay iteration-count direction fill-mode;
 }
 @keyframes logo {
     from {
